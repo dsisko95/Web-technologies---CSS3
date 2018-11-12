@@ -1,0 +1,199 @@
+@font-face{
+    font-family: Ubuntu-Bold;
+    src: url(Ubuntu-Bold.ttf);
+    /* Ubuntu-Bold fontovi da radili i offline */
+}
+@font-face{
+    font-family: Oswald-Bold;
+    src: url(Oswald-Bold.ttf);
+    /* Oswald fontovi da radili i offline */
+}
+body{
+    font: 20px Ubuntu-Bold;
+    line-height: 1.8;
+    padding-top: 80px;
+}  /* Padding se dodaje da bi sadrzaj bio ispod navigacionog menija */
+p{
+    font-size: 16px;
+} /* Velicina slova za fontove */
+.container-fluid{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    /* Dizajn za container */
+}
+.navbar-default{
+    background-color: #20B0D4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    border-bottom: 1px solid black;
+    /* Dizajn navigacionog menija */
+}
+.nav.navbar-nav.navbar-right li a{
+    color: white;
+    font-size: 18px; 
+    text-align: center;
+    /* Dizajn linkova desno */
+}
+.nav.navbar-nav.navbar-right li a:hover{
+    background-color: #555;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 30px;
+     /* Dizajn linkova desno, kada se predje misom preko njih */
+}
+.navbar-default .navbar-brand{
+    color: black;
+    font-size: 36px;
+    font-family: Oswald-Bold;
+    font-weight: bold;
+    /* Dizajn logoa websajta */
+}
+.navbar-default .navbar-brand:hover{
+    color: black;
+    /* Dizajn logoa websajta, kada se misem predje preko */
+}
+#kuca{
+    color: white;
+    font-size: 18px;
+}   /* Dizajn kucice u navigacionom meniju*/
+#kuca:hover{
+    color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}   /* Dizajn kucice u navigacionom meniju, kada se misom predje preko */
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: black;
+} /* Crn hamburger meni */
+.navbar-default .navbar-brand{
+    color: black;
+} /* Logo crne boje */
+footer{
+    background-color: dimgray;
+    border-top: 2px solid gray;
+} /*  Stilizovanje futera */
+.container-fluid:last-child a img{
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+} /*  Stilizovanje social link button-a u futeru */
+.container-fluid:last-child a img:hover{
+    opacity: 1;
+} /*  Stilizovanje futer social button-a kada se predje misom preko */
+.jumbotron{
+    margin-bottom: 0;
+    position: relative;
+}/* Brisanje margina jumbotron-a */
+.jumbotron button{
+    padding: 5px 15px 5px 15px;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 3px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+} /* Stilizovanje dugmeta */
+.jumbotron button:hover{
+    background-color: white;
+    color: #286090;
+} /* Stilizovanje dugmeta kada se predje misom preko */
+.jumbotron img{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+} /* Stilizovanje slike u jumbotronu */
+.jumbotron#drugi, .jumbotron#treci, .jumbotron#cetvrti, .jumbotron#peti, .jumbotron#sesti, .jumbotron#sedmi, .jumbotron#osmi, .jumbotron#deveti, .jumbotron#deseti, .jumbotron#jedanaesti, .jumbotron#dvanaesti{
+    display: none;
+} /* Sakrivanje grupe panela */
+.sadrzaj{
+    background-color: gainsboro;
+    border-radius: 25px;
+    padding: 20px 0 20px 0;
+    margin: auto auto 34px auto; 
+    font-size: 19px;
+    max-width: 500px;
+} /* Stilizovanje sadrzaja */
+.sadrzaj input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+} /* Stilizovanje radio button-a */
+.poravnanje{
+    text-align: justify;
+} /* Poravnanje levo radio button-a */
+.jumbotron#dvanaesti .sadrzaj{
+    max-width: 900px;
+} /* Stilizovanje jumbotron-a rezultata */
+.jumbotron#dvanaesti img{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -70px;
+} /* Stilizovanje jumbotron-a rezultata slike */
+.jumbotron#dvanaesti button{
+    padding: 5px 15px 5px 15px;
+    height: 40px;
+    width: 160px;
+    font-size: 16px;
+    border-radius: 3px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    text-align: center;
+    margin-bottom: 10px;
+} /* Stilizovanje jumbotron-a rezultata dugmeta */
+.jumbotron#dvanaesti #odgovori{
+    display: none;
+} /* Sakrivanje odgovora */
+.jumbotron .info{
+    position: relative;
+    background-color: #286090;
+    padding: 5px 15px 5px 15px;
+    height: 40px;
+    max-width: 250px;
+    border-radius: 3px;
+    color: white;
+    margin: auto;
+    top: 10px;
+    border-radius: 10px;
+} /* Validacioni tekst */
+.jumbotron .info:before{
+    content:' ';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #286090;
+    left: 0;
+    right: 0;
+    top: -8px;
+    margin-left: auto;
+    margin-right: auto;
+} /* Strelica na div element validacionog teksta */
+.active{
+    background-color: #555;
+    border-radius: 30px;
+} /* Active klasa */
+@media only screen and (max-width:992px){
+    .jumbotron#dvanaesti img{
+        top: -70px;
+    }
+} 
+@media only screen and (max-width:768px){
+    .jumbotron#dvanaesti img{
+        top: -50px;
+    }
+}/* Medija upit da bi slika bilo ispod navigacionog menija na manjim ekranima */

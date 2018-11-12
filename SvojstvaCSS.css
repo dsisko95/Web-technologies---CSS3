@@ -1,0 +1,149 @@
+@font-face{
+    font-family: Ubuntu-Bold;
+    src: url(Ubuntu-Bold.ttf);
+    /* Ubuntu-Bold fontovi da radili i offline */
+}
+@font-face{
+    font-family: Oswald-Bold;
+    src: url(Oswald-Bold.ttf);
+    /* Oswald fontovi da radili i offline */
+}
+body{
+    font: 20px Ubuntu-Bold;
+    line-height: 1.8;
+    padding-top: 80px;
+}  /* Padding se dodaje da bi sadrzaj bio ispod navigacionog menija */
+.container-fluid{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    /* Dizajn za container */
+}
+.navbar-default{
+    background-color: #20B0D4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    border-bottom: 1px solid black;
+    /* Dizajn navigacionog menija */
+}
+.nav.navbar-nav.navbar-right li a{
+    color: white;
+    font-size: 18px; 
+    text-align: center;
+    /* Dizajn linkova desno */
+}
+.nav.navbar-nav.navbar-right li a:hover{
+    background-color: #555;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 30px;
+     /* Dizajn linkova desno, kada se predje misom preko njih */
+}
+.navbar-default .navbar-brand{
+    color: black;
+    font-size: 36px;
+    font-family: Oswald-Bold;
+    font-weight: bold;
+    /* Dizajn logoa websajta */
+}
+.navbar-default .navbar-brand:hover{
+    color: black;
+    /* Dizajn logoa websajta, kada se misem predje preko */
+}
+#kuca{
+    color: white;
+    font-size: 18px;
+}   /* Dizajn kucice u navigacionom meniju*/
+#kuca:hover{
+    color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}   /* Dizajn kucice u navigacionom meniju, kada se misom predje preko */
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: black;
+} /* Crn hamburger meni */
+.navbar-default .navbar-brand{
+    color: black;
+} /* Logo crne boje */
+footer{
+    background-color: dimgray;
+    border-top: 2px solid gray;
+} /*  Stilizovanje futera */
+.container-fluid:last-child a img{
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+} /*  Stilizovanje social link button-a u futeru */
+.container-fluid:last-child a img:hover{
+    opacity: 1;
+} /*  Stilizovanje futer social button-a kada se predje misom preko */
+section .container-fluid img#meni{
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    padding-top: 10px 0px 5px 0px;
+} /* Stilizovanje slike meni */
+section .container-fluid img#meni:hover{
+    opacity: 1;
+} /* Stilizovanje slike, kada se predje misom preko */
+section .container-fluid #prvi{
+    background-color: #3299BB;
+    padding: 20px 0 10px 20px;
+    min-width: 69%;
+} /* Stilizovanje prvog reda */
+section .container-fluid{
+    background-color: gainsboro;
+} /* Stilizovanje pozadine */
+section .container-fluid p#izaberi{
+    float: left;
+    cursor: default;
+} /* Stilizovanje teksta izaberi */
+section .container-fluid p{
+    font-size: 20px;
+    cursor: pointer;
+} /* Stilizovanje teksta */
+section .container-fluid .row{
+    min-width: 70%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+} /* Stilizovanje ostalih redova */
+section .container-fluid .row .well{
+    background-color: #444;
+    margin: 0px -10px 0px -10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 22px;
+} /* Stilizovanje bootstrap well-a odnosno svojstava */
+section .container-fluid .row .well:hover{
+    background-color: #555;
+} /* Stilizovanje well-a kada se misom predje preko */
+section .container-fluid .opis{
+    display: none;
+    background-color: darkgray;
+    border-radius: 10px;
+    width: 69%;
+    margin: auto;
+} /* Stilizovanje div-a koji se pojavljuje kada se klikne na well */
+.active{
+    background-color: #555;
+    border-radius: 30px;
+} /* Active klasa */
+@media only screen  and (min-width: 768px) and (max-width: 888px){
+    section .container-fluid .row .well{
+        height: 118px;
+    }
+} /* Stilizovanje well-a u navedenom rasponu sirine ekrana*/

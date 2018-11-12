@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+      <title>CSS3</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Zum na manjim uredjajima -->
+      <meta name="description" content="CSS3 je najnoviji standard za CSS. U potpunosti je kompatibilan sa starijim verzijama CSS-a. Podeljen je na module koji su kompatibilni sa svim pregledacima."> <!-- Opis stranice -->
+      <meta name="keywords" content="CSS3, RWD, Responsive Web Design, CSS3 moduli, CSS3 Kviz, CSS3 Svojstva, CSS3 Kontakt">  <!-- Kljucne reci -->
+      <meta name="author" content="Daniel Sisovic"><!-- Autor stranice -->
+      <link rel="shortcut icon" href="css.ico"><!-- Mala ikonica na pretrazivacu -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]--><!-- HTML5 Shiv za IE kako bi prepoznao nove elemente-->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="custom.css"> <!-- Nas CSS -->
+      <script src="jquery-3.1.1.min.js"></script> <!-- JQUERY biblioteka -->
+      <script src="bootstrap.min.js"></script> <!-- Bootstrap javascript biblioteka -->
+      <script src="IndexJQuery.js"></script> <!-- Nas JQuery -->
+      <link rel="stylesheet" href="animate.css"> <!-- Biblioteka za animacije -->
+      <script src="wow.min.js"></script> <!-- Biblioteka potrebna za rad sa animacijama -->
+      <script>new WOW().init();</script> <!-- Kreiranje Wow insance za klase i animacije -->
+      <script src="jquery.animatecss.min.js"></script> <!-- JQuery dinamicke animacije AnimateCSS -->
+      <link href="font-awesome.css" rel="stylesheet">       <!-- fa ikone -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <!-- fa cdn za Mozilu-->
+     </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top"> <!-- Navigacioni meni -->
+          <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- Hamburger meni za manje uredjaje -->
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>       
+                  </button>
+                  <p class="navbar-brand">CSS3</p>
+                </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" id="kuca" class="active"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="Svojstva.html">Atributi</a></li>
+        <li><a href="RWD.html">RWD</a></li>
+        <li><a href="Kviz.html">Kviz</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+        <li><a href="ONama.html">O nama</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <section>
+   <div class="jumbotron text-center"> <!-- Sadrzaj ove strane -->
+    <div class="container">
+          <h3 class="margin wow bounceInUp">Šta je CSS3?</h3>
+          <p class="wow bounceInLeft">CSS3 (Cascading Style Sheets 3) je najnoviji standard za CSS.<br> U potpunosti je kompatibilan sa starijim verzijama CSS-a.<br> Podeljen je na "module" koji su kompatibilni sa svim pregledačima.<br>Neki od tih modula su:</p>
+          <img src="CSS3-logo.png" class="img-responsive wow bounceIn" alt="css3Logo">
+          <span class="glyphicon glyphicon-download"></span>
+          </div>
+          <p id="skriven"></p>
+        </div>
+<div id="strelicaSadrzaj">
+    <div class="container-fluid body-content text-center">  <!-- Sadrzaj modula -->
+          <div class="row">
+            <div class="col-sm-4">
+             <h3 class="margin" style="margin-bottom: -10px;">Selektori</h3><br>
+              <p style="margin-bottom: 40px;" >Dodati su novi funkcionalni selektori na nth-child tipove, kao i pseudo-klase i pseudo-elemente. Takođe su implementirani i novi selektori po atributu. </p>
+              <div class="krug" id="krug1"><p>Tester</p></div>
+            </div>
+            <div class="col-sm-4"><h3 class="margin" style="margin-bottom: -10px;">Box model</h3><br>
+              <p>Svi HTML elementi se mogu posmatrati kao "kutije". Kod CSS-a ovaj termin se koristi kod dizajna i layout-a. Sastoji se od: margina, paddinga, ivica, i sadržaja. </p>
+              <div class="krug" id="krug2"><p>Tester</p></div>
+            </div>
+            <div class="col-sm-4"> 
+              <h3 class="margin" style="margin-bottom: -10px;">Flexbox</h3><br>
+              <p>Flekisbilne "kutije" tj. flexbox predstavljaju novi layout model za CSS3. Korišćenjem ove funkcije, omogućava se elementima da se ponašaju predvidljivo u odnosu na veličinu ekrana.</p>
+              <div class="krug" id="krug3"><p>Tester</p></div>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col-sm-4">
+              <h3 class="margin" style="margin-bottom: -10px;">2D/3D <br>transformacije</h3><br>
+              <p>Animacije nam omogućavaju da rotiramo, povećavamo veličinu, menjamo oblike elemenata itd.<br> CSS podržava 2D i 3D animacije.</p>
+              <div class="krug" id="krug4"><p>Tester</p></div>
+            </div>
+            <div class="col-sm-4"> 
+              <h3 class="margin" style="margin-bottom: -10px;">Animacije</h3><br>
+              <p>Animacije omogucćavaju animaciju većine HTML elemenata bez korišćenja Javascripta i Flesa. Koristi se ključna reč "@keyframes" da bi se animacija kreirala.</p>
+              <div class="krug" id="krug5"><p>Tester</p></div>
+            </div>
+            <div class="col-sm-4"> 
+              <h3 class="margin" style="margin-bottom: -10px;">Pozadina i ivice</h3><br>
+              <p>Postoji mogućnost da se za ivice iskoristi slika. Moguće je dodati i border-radius za zaobličenje itd. Kod pozadina je dodato novih mogućnosti,zbog<br> bolje kontrole nad pozadinskim elementima. </p>
+              <div class="krug" id="krug6"><p>Tester</p></div>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col-sm-4">
+              <h3 class="margin" style="margin-bottom: -10px;">Gradijenti za boje</h3><br>
+              <p>CSS3 gradijenti omogućavaju glatke prelaze između dve ili više boja. Postoje dva tipa gradijenata:<br> 
+              1. Linearni (definisani u svim pravcima)<br> 
+              2. Radialni (definisani su od centra)
+              </p>
+              <div class="krug" id="krug7"><p>Tester</p></div>
+            </div>
+            <div class="col-sm-4"> 
+              <h3 class="margin" style="margin-bottom: -10px;">Senke</h3><br>
+              <p>Sa CSS3 možemo dodati senke za tekst i za sve ostale elemente. Za ovu svrhu se koriste dva tipa tagova: text-shadow i box-shadow.</p>
+              <div class="krug" id="krug8"><p>Tester</p></div>
+            </div>
+            <div class="col-sm-4"> 
+              <h3 class="margin" style="margin-bottom: -10px;">Media upiti</h3><br>
+              <p>Media upitima se postiže da websajt izgleda dobro na svim uređajima. Ovo je popularna tehnika za stilizovanje izgleda websajta za tablete, iPhone i Android uređaje.</p>
+              <div class="krug" id="krug9"><p>Tester</p></div>
+            </div>
+          </div>
+    </div>
+    <div class="container-fluid body-content text-center"> <!-- Sadrzaj drugog body-contenta -->
+        <div class="row">
+         <div class="col-sm-12">
+             <h3 style="margin-bottom: 30px;" class="wow rollIn">Klasifikacija i status CSS3 modula</h3>
+             <div class="krugoviK wow zoomIn" id="krug1K">Preporučeno</div>
+             <div class="krugoviK wow zoomIn" id="krug2K">Kandidat</div>
+             <div class="krugoviK wow zoomIn" id="krug3K">Razmatra se</div>
+             <div class="krugoviK wow zoomIn" id="krug4K">U fazi izrade</div>
+             <img src="Taksonomija.png" alt="taksonomija" class="img-responsive wow lightSpeedIn" style="margin: 0 auto;" id="klasifikacija">
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid body-content text-center"> <!-- Sadrzaj treceg body-contenta -->
+        <div class="row">
+           <div class="col-sm-12">
+               <h3 style="margin-bottom: 20px;" class="wow fadeInUp">Podržanost pretraživaca i prefiksi</h3>
+               <p class="wow fadeInUp">CSS3 je kompatibilan sa svim modernim pregledačima,<br> međutim potrebno je dodati određene prefikse za novije elemente.<br> Ti prefiksi su: </p>
+           </div>
+        </div>
+        <div class="row">
+         <div class="col-sm-3">
+             <img src="gugl.png" alt="gugl" class="img-responsive wow rollIn">
+             <div class="prefiks">-webkit-</div>
+         </div>
+         <div class="col-sm-3">
+             <img src="firefox.png" alt="firefox" class="img-responsive wow rollIn">
+             <div class="prefiks">-moz-</div>
+         </div>
+         <div class="col-sm-3">
+             <img src="opera.png" alt="opera" class="img-responsive wow rollIn">
+             <div class="prefiks">-o-</div>
+         </div>
+         <div class="col-sm-3">
+             <img src="IE.png" alt="explorer" class="img-responsive wow rollIn">
+             <div class="prefiks">-ms-</div>
+         </div>
+        </div>
+      </div>
+    </div>
+   </section>
+    <footer class="container-fluid text-center"> <!-- Futer -->
+       <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.google.com"><img src="google.png" alt="Google"></a>
+        <a href="https://www.pinterest.com"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+      <p>CSS3 - Sva prava zadržana! &copy; 2017</p>
+    </footer>
+</body>
+</html>

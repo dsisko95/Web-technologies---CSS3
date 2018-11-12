@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+      <title>CSS3 - Kontakt</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Zum na manjim uredjajima -->
+      <meta name="description" content="Kontakt formom stavite nam do znanja da li je ovaj websajt ostavio utisak na Vas. "> <!-- Opis stranice -->
+      <meta name="keywords" content="CSS3, RWD, Responsive Web Design, CSS3 moduli, CSS3 Kviz, CSS3 Svojstva, CSS3 Kontakt"> <!-- Kljucne reci -->
+      <meta name="author" content="Daniel Sisovic"><!-- Autor stranice -->
+      <link rel="shortcut icon" href="css.ico"><!-- Mala ikonica na pretrazivacu -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]--><!-- HTML5 Shiv za IE kako bi prepoznao nove elemente-->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="Kontakt.css"> <!-- Nas CSS -->
+      <script src="jquery-3.1.1.min.js"></script> <!-- JQUERY biblioteka -->
+      <script src="bootstrap.min.js"></script> <!-- Bootstrap javascript biblioteka -->
+      <script src="KontaktJQ.js"></script> <!-- Nas JQuery -->
+      <link rel="stylesheet" href="animate.css"> <!-- Biblioteka za animacije -->
+      <script src="wow.min.js"></script> <!-- Biblioteka potrebna za rad sa animacijama -->
+      <script>new WOW().init();</script> <!-- Kreiranje Wow insance za klase i animacije -->
+      <script src="jquery.animatecss.min.js"></script> <!-- JQuery dinamicke animacije AnimateCSS -->
+      <link href="font-awesome.css" rel="stylesheet">       <!-- fa ikone -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <!-- fa cdn za Mozilu-->
+     </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top"> <!-- Navigacioni meni -->
+          <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- Hamburger meni za manje uredjaje -->
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>               
+                  </button>
+                  <p class="navbar-brand">CSS3</p>
+                </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" id="kuca"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="Svojstva.html">Atributi</a></li>
+        <li><a href="RWD.html">RWD</a></li>
+        <li><a href="Kviz.html">Kviz</a></li>
+        <li><a href="Kontakt.html" class="active">Kontakt</a></li>
+        <li><a href="ONama.html">O nama</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <section>
+  <div class="container-fluid body-content text-center"> <!-- Sadrzaj body-content-a -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="sadrzaj">
+                <span id="obavezno">* obavezna polja</span>
+                 <form>
+                   <img src="CSS3-logo.png" class="img-responsive" alt="css3logo">
+                    <div class="form-group">
+                        <label for="tekst"> Vaše ime:</label>
+                        <input type="text" class="form-control" id="tekst" placeholder="Unesite ime: * ">
+                    </div>
+                    <div class="form-group">
+                        <label for="mejl"> Email adresa:</label>
+                        <input type="email" class="form-control" id="mejl" placeholder="Unesite email adresu: *" name="mejl" oninvalid="setCustomValidity(' ')">
+                    </div>
+                    <div class="form-group">
+                        <label for="area"> Komentar:</label>
+                        <textarea class="form-control" rows="8" cols="20" id="area" placeholder="Dodajte komentar ukoliko je ovaj sajt ostavio utisak na Vas: *" name="komentar"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Primite najnovije vesti na mejl?</label>
+                    </div>
+                        <button type="submit" class="btn btn-primary">Pošalji</button>
+                        <div id="info"></div>
+                </form>
+            </div>
+        </div>
+     </div>
+  </div>
+</section>
+    <footer class="container-fluid text-center"> <!-- Futer -->
+       <div class="row">
+        <div class="col-sm-4"> <!-- FB vidzet -->
+           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCSS3.OFFICIAL%2F&tabs=timeline&width=250&height=150&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="250" height="150" style="border:none;overflow:hidden" ></iframe> 
+        </div>
+        <div class="col-sm-4">
+           <div id="centralno">
+            <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.google.com"><img src="google.png" alt="Google"></a>
+            <a href="https://www.pinterest.com"><img src="pinterest.png" alt="Pinterest"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <p>CSS3 - Sva prava zadržana! &copy; 2017</p>
+         </div>
+        </div>
+        <div class="col-sm-4"> <!-- FB video -->
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffutureofmobility%2Fvideos%2F1864607607109846%2F&show_text=0&width=300" width="250" style="border:none;overflow:hidden"></iframe> 
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

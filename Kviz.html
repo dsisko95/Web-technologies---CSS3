@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+      <title>CSS3 - Kviz</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Zum na manjim uredjajima -->
+      <meta name="description" content="Kvizom testirajte Vase dosadasnje znanje ili neznanje o CSS3."> <!-- Opis stranice -->
+      <meta name="keywords" content="CSS3, RWD, Responsive Web Design, CSS3 moduli, CSS3 Kviz, CSS3 Svojstva, CSS3 Kontakt"> <!-- Kljucne reci -->
+      <meta name="author" content="Mladen Ivanovic"><!-- Autor stranice -->
+      <link rel="shortcut icon" href="css.ico"><!-- Mala ikonica na pretrazivacu -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]--><!-- HTML5 Shiv za IE kako bi prepoznao nove elemente-->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="KvizCss.css"> <!-- Nas CSS -->
+      <script src="jquery-3.1.1.min.js"></script> <!-- JQUERY biblioteka -->
+      <script src="bootstrap.min.js"></script> <!-- Bootstrap javascript biblioteka -->
+      <script src="KvizJQ.js"></script> <!-- Nas JQuery -->
+      <link rel="stylesheet" href="animate.css"> <!-- Biblioteka za animacije -->
+      <script src="wow.min.js"></script> <!-- Biblioteka potrebna za rad sa animacijama -->
+      <script>new WOW().init();</script> <!-- Kreiranje Wow insance za klase i animacije -->
+      <script src="jquery.animatecss.min.js"></script> <!-- JQuery dinamicke animacije AnimateCSS -->
+      <link href="font-awesome.css" rel="stylesheet"><!-- fa ikone -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <!-- fa cdn za Mozilu-->
+      <script src="KvizJS.js"></script><!-- Nas JavaScript fajl -->
+     </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top"> <!-- Navigacioni meni -->
+          <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- Hamburger meni za manje uredjaje -->
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>       
+                  </button>
+                  <p class="navbar-brand">CSS3</p>
+                </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" id="kuca"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="Svojstva.html">Atributi</a></li>
+        <li><a href="RWD.html">RWD</a></li>
+        <li><a href="Kviz.html" class="active">Kviz</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+        <li><a href="ONama.html">O nama</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section>
+   <div class="jumbotron text-center" id="prvi"> <!-- Sadrzaj ove strane -->
+    <div class="container">
+          <img src="CSS3-logo.png" alt="css3" class="img-responsive wow rollIn">
+          <h3 class="wow pulse">CSS3 test</h3>
+          <p class="wow zoomInUp">Ovaj test je dobar način na koji možete da testirate Vaše znanje ili neznanje o CSS3 <br> Test se sastoji od 10 pitanja i nema vremenskog ograničenja<br> 
+          Opcija "Ne znam" umanjuje broj poena za 0.25 <br>
+          Pogrešan odgovor umanjuje broj poena za 0.5 <br> 
+          Za svaki tačan odgovor se dobija po 1 poen<br> 
+          Srećno!</p>
+          <button type="button" class="btn btn-primary" id="prvo">Kreni</button>
+    </div>
+   </div>
+     <div class="jumbotron text-center" id="drugi"> <!-- Sadrzaj prvog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Šta znači CSS3?</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> Cascading Style Sheets 3</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Colorful Style Sheets 3</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Computer Style Sheets 3</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Creative Style Sheets 3</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="drugo">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+   <div class="jumbotron text-center" id="treci"> <!-- Sadrzaj drugog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Šta označava slovo "a" kod rgba?</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Alt-Transparency</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> Alpha</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Alphabetic</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Alphanumeric</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="trece">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+   <div class="jumbotron text-center" id="cetvrti"> <!-- Sadrzaj treceg pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>CSS3 Transition modul nije podržan od strane?</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Google Chrome-a</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Mozille Firefox-a</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> Internet Explorer-a</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Opere</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="cetvrto">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+    <div class="jumbotron text-center" id="peti"> <!-- Sadrzaj cetvrtog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Da li je ovo validna deklaracija? text-shadow: 0 1px 0 #fff, 0 -1px 0 #000;</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> Da</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Ne</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Možda</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="peto">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+    <div class="jumbotron text-center" id="sesti"> <!-- Sadrzaj petog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Kako da rotirate objekte koristeći CSS3?</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> rotate-object: 30deg;</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> rotate: 30deg;</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> transform: rotate(30deg);</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="sesto">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+    <div class="jumbotron text-center" id="sedmi"> <!-- Sadrzaj sestog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Koji prefiks se koristi da bi modul bio podržan od strane Internet Explorera?</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> -webkit-</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> -ms-</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> -moz-</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="sedmo">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+   <div class="jumbotron text-center" id="osmi"> <!-- Sadrzaj sedmog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Da li će :empty pseudo klasa selektovati element jedino ako taj element ima komentar u sebi?</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> Da</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Ne</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="osmo">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+   <div class="jumbotron text-center" id="deveti"> <!-- Sadrzaj osmog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Sta omogućava box-sizing?</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Omogućava da se iscrta outline van granica ivice</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> Elementi imaju drugačija svojstva veličine</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Omogućava elementu da bude "resizable"</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="deveto">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+   <div class="jumbotron text-center" id="deseti"> <!-- Sadrzaj devetog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Kako će se pozicionirati sledeći element "transform: translate (0,100 px);"</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Desno 100 px</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Levo 100px</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> Dole 100px</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija()" id="deseto">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+   <div class="jumbotron text-center" id="jedanaesti"> <!-- Sadrzaj desetog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <h3>Koji modul omogućava da websajt izgleda dobro na svim uređajima?</h3>
+              <div class="poravnanje">
+               <form>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="1"> Media upiti</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Responsive upiti</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="0"> Android upiti</label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="radio" value="2"> Ne znam</label>
+                </div>
+             </form>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="funkcija(); funkcijaSuma()" id="jedanaesto">Odgovori</button>
+            <div class="info"></div>
+         </div>
+    </div>
+   </div>
+   <div class="jumbotron text-center" id="dvanaesti"> <!-- Sadrzaj desetog pitanja -->
+    <div class="container">
+         <div class="sadrzaj">
+            <img src="CSS3-logo.png" alt="css3" class="img-responsive">
+            <h3 class="wow" style="margin-top: -60px;">Rezultati</h3>
+            <p class="wow flipInY">Čestitamo, osvojili ste <span id="rezultat"></span> od 10 poena.</p>
+            <button type="button" class="btn btn-primary">Prikaži odgovore</button>
+            <div id="odgovori">
+            <p>1. Šta znači CSS3?<br>
+            Cascading Style Sheets 3
+              </p>
+            <p>2. Šta označava slovo "a" kod rgba?<br>
+            Alpha
+              </p>
+            <p>3. CSS3 Transition modul nije podržan od strane?<br>
+            Internet Explorer-a
+             </p>
+            <p>4. Da li je ovo validna deklaracija?<br> text-shadow: 0 1px 0 #fff, 0 -1px 0 #000;<br>
+            Da
+              </p>
+            <p>5. Kako da rotirate objekte koristeći CSS3?<br>
+            transform: rotate(30deg);</p>
+            <p>6. Koji prefiks se koristi da bi modul bio podrzan od strane Internet Explorera?<br>
+            -ms- </p>
+            <p>7. Da li ce :empty pseudo klasa selektovati element<br> jedino ako taj element ima komentar u sebi?<br>
+            Da </p>
+            <p>8. Sta omogućava box-sizing? <br>
+            Elementi imaju drugačija svojstva veličine
+            </p>
+            <p>9. Kako će se pozicionirati sledeći element<br> "transform: translate (0,100 px);"<br>
+            Dole 100px </p>
+            <p>10. Koji modul omogućava da websajt izgleda dobro na svim uređajima?<br>
+            Media upiti </p>
+            </div>
+         </div>
+    </div>
+   </div>
+    <script type="text/javascript"> <!-- Skripta koja broji tacne odgovore i prikazuje sumu na kraju u span elementu -->
+    var y, z, suma, i;
+        y = document.getElementsByTagName('input');
+        z = document.getElementById('rezultat');
+        suma = 0;
+        function funkcija() {
+        'use strict';
+        for (i = 0; i < y.length; i = i + 1) {
+            if (y[i].type === 'radio' && y[i].checked && y[i].value == 1) {
+            suma = suma + 1;
+                }
+            else if (y[i].type === 'radio' && y[i].checked && y[i].value == 2) {
+            suma = suma - 0.25;
+                }
+             else if (y[i].type === 'radio' && y[i].checked && y[i].value == 0) {
+            suma = suma - 0.5;
+                }
+            }
+        }
+        function funkcijaSuma() {
+            'use strict';
+        z.innerHTML = suma;
+        }
+    </script>
+    </section>
+    <footer class="container-fluid text-center"> <!-- Futer -->
+       <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.google.com"><img src="google.png" alt="Google"></a>
+        <a href="https://www.pinterest.com"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+      <p>CSS3 - Sva prava zadržana! &copy; 2017</p>
+    </footer>
+</body>
+</html>
