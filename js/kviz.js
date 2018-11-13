@@ -1,6 +1,6 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
-$(document).ready(function () {  /* Kada se ucita stranica,tek se onda pocinje sa funkcijama */
+$(document).ready(function () { /* Kada se ucita stranica,tek se onda pocinje sa funkcijama */
     'use strict';
     var i, y;
     y = document.getElementsByTagName('input');

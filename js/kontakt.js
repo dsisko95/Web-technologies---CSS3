@@ -1,6 +1,6 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
-$(document).ready(function () {  /* Kada se ucita stranica,tek se onda pocinje sa funkcijama */
+$(document).ready(function () { /* Kada se ucita stranica,tek se onda pocinje sa funkcijama */
     'use strict';
     $("#sadrzaj button").hover(function () {
         var mejl, string;
@@ -25,4 +25,3 @@ $(document).ready(function () {  /* Kada se ucita stranica,tek se onda pocinje s
     });
 });
 /*Funkcija za validaciju forme*/
-

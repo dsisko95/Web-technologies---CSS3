@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="sr">
+<head>
+  <title>CSS3 - Svojstva</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2"><!-- Zum na manjim uredjajima -->
+  <meta name="description" content="CSS3 Svojstva definisu nove module koji stizu sa verzijom CSS3. ">
+  <!-- Opis stranice -->
+  <meta name="keywords" content="CSS3, RWD, Responsive Web Design, CSS3 moduli, CSS3 Kviz, CSS3 Svojstva, CSS3 Kontakt">
+  <!-- Kljucne reci -->
+  <meta name="author" content="Daniel Sisovic"><!-- Autor stranice -->
+  <link rel="shortcut icon" href="../img/css.ico"><!-- Mala ikonica na pretrazivacu -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]-->
+  <!-- HTML5 Shiv za IE kako bi prepoznao nove elemente-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"> <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../styles/svojstva.css"> <!-- Nas CSS -->
+  <link rel="stylesheet" href="../dependecies/animate.css"> <!-- Biblioteka za animacije -->
+  <link href="../dependecies/font-awesome.css" rel="stylesheet"> <!-- fa ikone -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <!-- fa cdn za Mozilu-->
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- Navigacioni meni -->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <!-- Hamburger meni za manje uredjaje -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <p class="navbar-brand">CSS3</p>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../index.html" id="kuca"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li><a href="../html/svojstva.html" class="active">Atributi</a></li>
+          <li><a href="../html/rwd.html">RWD</a></li>
+          <li><a href="../html/kviz.html">Kviz</a></li>
+          <li><a href="../html/kontakt.html">Kontakt</a></li>
+          <li><a href="../html/oNama.html">O nama</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container-fluid body-content text-center">
+      <!-- Sadrzaj body-content-a -->
+      <h2 style="margin-bottom: 20px;">CSS3 svojstva</h2>
+      <div class="row" id="prvi">
+        <div class="col-sm-6 col-xs-6">
+          <p id="izaberi">Izaberi</p>
+        </div>
+        <div class="col-sm-6 col-xs-6">
+          <img src="../img/meni.png" alt="meni" class="img-responsive" id="meni">
+        </div>
+      </div>
+      <div id="sakrivenSadrzaj">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="prviPrvi">border-radius</div>
+          </div>
+          <div class="col-sm-4  col-xs-12">
+            <div class="well" id="drugi">border-image</div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="treci">background</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="cetvrti">Colors</div>
+          </div>
+          <div class="col-sm-4  col-xs-12">
+            <div class="well" id="peti">Gradients</div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="sesti">Shadows</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="sedmi">Text</div>
+          </div>
+          <div class="col-sm-4  col-xs-12">
+            <div class="well" id="osmi">Fonts</div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="deveti">Transforms</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="deseti">Transitions</div>
+          </div>
+          <div class="col-sm-4  col-xs-12">
+            <div class="well" id="jedanaesti">Animations</div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="dvanaesti">Columns</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="trinaesti">Interface</div>
+          </div>
+          <div class="col-sm-4  col-xs-12">
+            <div class="well" id="cetrnaesti">box-sizing</div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="well" id="petnaesti">Flexbox</div>
+          </div>
+        </div>
+      </div>
+      <div class="opis">
+      </div>
+    </div>
+  </section>
+  <footer class="container-fluid text-center">
+    <!-- Futer -->
+    <a href="https://www.facebook.com"><img src="../img/facebook.png" alt="Facebook"></a>
+    <a href="https://www.google.com"><img src="../img/google.png" alt="Google"></a>
+    <a href="https://www.pinterest.com"><img src="../img/pinterest.png" alt="Pinterest"></a>
+    <a href="https://www.twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter"></a>
+    <p>CSS3 - Sva prava zadržana! &copy; 2017</p>
+  </footer>
+  <script src="../dependecies/jquery-3.1.1.min.js"></script> <!-- JQUERY biblioteka -->
+  <script src="../dependecies/bootstrap.min.js"></script> <!-- Bootstrap javascript biblioteka -->
+  <script src="../dependecies/wow.min.js"></script> <!-- Biblioteka potrebna za rad sa animacijama -->
+  <script>new WOW().init();</script> <!-- Kreiranje Wow insance za klase i animacije -->
+  <script src="../dependecies/jquery.animatecss.min.js"></script> <!-- JQuery dinamicke animacije AnimateCSS -->
+  <script src="../js/svojstva.js"></script> <!-- Nas JQuery -->
+</body>
+</html>
