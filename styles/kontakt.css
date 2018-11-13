@@ -1,0 +1,266 @@
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(../font/Ubuntu-Bold.ttf);
+    /* Ubuntu-Bold fontovi da radili i offline */
+}
+
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(../font/Oswald-Bold.ttf);
+    /* Oswald fontovi da radili i offline */
+}
+
+body {
+    font: 20px Ubuntu-Bold;
+    line-height: 1.8;
+    padding-top: 80px;
+    background-color: whitesmoke;
+}
+
+/* Padding se dodaje da bi sadrzaj bio ispod navigacionog menija */
+p {
+    font-size: 16px;
+}
+
+/* Velicina fonta za paragraf */
+.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    /* Dizajn za container */
+}
+
+.navbar-default {
+    background-color: #20B0D4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    border-bottom: 1px solid black;
+    /* Dizajn navigacionog menija */
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    /* Dizajn linkova desno */
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    background-color: #555;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 30px;
+    /* Dizajn linkova desno, kada se predje misom preko njih */
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: 36px;
+    font-family: Oswald-Bold;
+    font-weight: bold;
+    /* Dizajn logoa websajta */
+}
+
+.navbar-default .navbar-brand:hover {
+    color: black;
+    /* Dizajn logoa websajta, kada se misem predje preko */
+}
+
+#kuca {
+    color: white;
+    font-size: 18px;
+}
+
+/* Dizajn kucice u navigacionom meniju*/
+#kuca:hover {
+    color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* Dizajn kucice u navigacionom meniju, kada se misom predje preko */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+/* Crn hamburger meni */
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+/* Logo crne boje */
+footer {
+    background-color: gray;
+    border-top: 2px solid gray;
+}
+
+footer a img {
+    width: 50px;
+    height: 50px;
+}
+
+/*  Stilizovanje futera */
+.container-fluid:last-child a img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* Stilizovanje social link button-a u futeru */
+.container-fluid:last-child a img:hover {
+    opacity: 1;
+}
+
+/* Stilizovanje futer social button-a kada se predje misom preko */
+#sadrzaj {
+    max-width: 450px;
+    margin: auto;
+    padding: 30px 15px 15px 15px;
+    position: relative;
+    margin-top: 50px;
+    background-color: rgba(214, 213, 241, 1);
+    border-radius: 20px;
+    height: 580px;
+    box-shadow: 2px 2px gray;
+}
+
+/* Stilizovanje forme */
+#sadrzaj span {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: slategray;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+/* Stilizovanje teksta obaveznog polja */
+#sadrzaj textarea {
+    resize: none;
+}
+
+/* Stilizovanje textarea da ne moze da se siri */
+#sadrzaj img {
+    height: 125px;
+    width: 125px;
+    margin: auto;
+    position: absolute;
+    top: -90px;
+    left: 0;
+    right: 0;
+}
+
+/* Stilizovanje logoa */
+#sadrzaj button {
+    padding: 5px 15px 5px 15px;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 3px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+/* Stilizovanje dugmeta */
+#sadrzaj button:hover {
+    background-color: white;
+    color: #286090;
+}
+
+/* Stilizovanje dugmeta kada se predje misom preko */
+#sadrzaj .checkbox input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    top: 6px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+/* Stilizovanje checkbox-a */
+.form-control:focus {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+/* Fokusom na polje forme dobija se senka */
+#info {
+    position: relative;
+    background-color: #286090;
+    padding: 5px 15px 5px 15px;
+    height: 40px;
+    min-width: 120px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: white;
+    display: none;
+    margin: auto;
+    top: 10px;
+    border-radius: 10px;
+}
+
+/* Validacioni tekst */
+#info:before {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #286090;
+    left: 0;
+    right: 0;
+    top: -8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Strelica na div element validacionog teksta */
+.active {
+    background-color: #555;
+    border-radius: 30px;
+}
+
+/* Active klasa */
+@media only screen and (max-width:480px) {
+    #sadrzaj {
+        height: 660px;
+    }
+
+    #info {
+        height: 80px;
+        text-align: center;
+    }
+
+    #info i {
+        font-size: 30px;
+    }
+}
+
+/* Sirina sadrzaja se prilagodjava tekstu na manjim ekranima */
+@-moz-document url-prefix() {
+    #sadrzaj {
+        height: 600px;
+    }
+
+    @media only screen and (max-width:480px) {
+        #sadrzaj {
+            height: 680px;
+        }
+
+        #info {
+            height: 80px;
+            text-align: center;
+        }
+    }
+}
+
+/* Kod mozile je problem sto visina sadrzaja nije iste velicine */

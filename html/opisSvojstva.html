@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <title>OpisTagova</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="opisBorderRadius" style="padding: 5px;">
+        <!-- Sadrzaj border-radius-a -->
+        <img src="../img/opisBorder.png" alt="borderPregledac" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>Sa <code>border-radius</code> svojstvom se, gotovo svakom elementu dodaju zaobljene ivice.<br>
+            <code>border-radius</code> je skraćenica za <code>border-top-left-radius</code>, <code>border-top-right-radius</code>,
+            <code>border-bottom-right-radius</code>, <code>border-bottom-left-radius</code><br>
+            Mogu se dodati vrednosti za svaki ugao:<br>
+            Četiri vrednosti: <code>border-radius: 10px 15px 5px 20px;</code><br>
+            10px - top-left<br>
+            15px - top-right<br>
+            5px - bottom-right<br>
+            20px - bottom-left<br>
+            Tri vrednosti: <code>border-radius: 10px 15px 5px;</code><br>
+            10px - top-left<br>
+            15px - top-right i bottom-left<br>
+            5px - bottom-right<br>
+            Dve vrednosti: <code>border-radius: 10px 15px;</code><br>
+            10px - top-left i bottom-right<br>
+            15px - top-right i bottom-left<br>
+            Jedna vrednost: <code>border-radius: 10px;</code><br>
+            10px - Svaki ugao ima 10px<br>
+        </p>
+    </div>
+    <div id="opisBorderImage" style="padding: 5px;">
+        <!-- Sadrzaj border-image -->
+        <img src="../img/opisBorderImage.png" alt="borderPregledac" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>Sa <code>border-image</code> svojstvom se može podesiti da slika bude ikorišćena kao ivica za element.<br>
+            <code>border-image</code> ima 3 parametra:<br>
+            1. Slika koja se koristi kao ivica<br>
+            2. Gde slika treba da se iseče<br>
+            3. Definisanje da li sredina treba da se ponavlja ili da bude razvučena<br>
+            <code>border-image: url(border.png) 30 round;</code> ili<br>
+            <code>border-image: url(border.png) 30 stretch;</code>
+    </div>
+    <div id="opisBackground" style="padding: 5px;">
+        <!-- Sadrzaj background -->
+        <img src="../img/opisBackground.png" alt="background" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p><code>background</code> svojstvo se koristi za kontrolu pozadinskih elemenata<br> i dolazi sa nekoliko
+            novina: <br>
+            <code>background-size</code>,
+            <code>background-origin</code>,
+            <code>background-clip</code></p>
+        <hr>
+        <p>
+            <code>background-size</code> - svojstvo omogućava da se podesi veličina pozadinske slike <br>
+            <code>background-size: 100px 80px;</code>, <code> background-size: contain</code>,
+            <code>background-size: cover</code><br>
+            <code>background-size: 100px 80px;</code> 100px - širina i
+            80px - visina</p>
+
+        <code> background-size: contain</code> pozadinska slika se proširuje što je više moguće,<br> ali širina i
+        visina moraju da budu unutar sadržaja elementa<br>
+        <code> background-size: cover</code> pozadinska slika se proširuje maksimalno,<br> tako da je čitav sadržaj
+        "pokriven" pozadinskom slikom<br>
+        <hr>
+        <code>background-origin</code> - svojstvo "govori" gde je pozadinska slika pozicionirana<br>
+        <code>background-origin: border-box;</code>, <code> background-origin: padding-box;</code>,
+        <code>background-origin: content-box;</code><br>
+        <code>background-origin: border-box;</code> pozadinska slika je pozicionirana u gornjem levom uglu ivice
+        elementa<br>
+        <code>background-origin: padding-box;</code> (podrazumevana vrednost) pozadinska slika je pozicionirana u
+        gornjem levom uglu ivice padding-a elementa<br>
+        <code>background-origin: content-box;</code> pozadinska slika je pozicionirana u gornjem levom uglu sadržaja
+        elementa <br>
+        <hr>
+        <code>background-clip</code> - svojstvo precizira gde će pozadinska slika da se ocrta<br>
+        <code>background-clip: border-box;</code>, <code> background-clip: padding-box;</code>,
+        <code>background-clip: content-box;</code><br>
+        <code>background-clip: border-box;</code> (podrazumevana vrednost) pozadinska slika se<br> ocrtava izvan ivice
+        elementa<br>
+        <code>background-clip: padding-box;</code> pozadinska slika se ocrtava izvan ivice padding-a elementa<br>
+        <code>background-clip: content-box;</code> pozadinska slika se ocrtava izvan sadržaja elementa <br>
+    </div>
+    <div id="opisColors" style="padding: 5px;">
+        <!-- Sadrzaj Colors -->
+        <img src="../img/opisColors.png" alt="Colors" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>Svojstva CSS3 boja:<br>
+            <code>rgba, hsl, hsla, opacity</code><br>
+            <code>rgba(red, green, blue, alpha);</code> - precizira crvenu, zelenu, plavu boju kao i alpha parametar.<br>
+            Alpha parametar je broj između 0.0 (skroz prozirno) i
+            1.0 (neprozirno).</p>
+        <hr>
+        <p>
+            <code>hsl(hue, saturation, lightness);</code><br>
+            <code>hue</code> - odnosno nijansa može biti vrednost od 0 do 360.<br>
+            0 ili 360 - crvena boja,
+            120 - zelena,
+            240 - plava</p>
+        <p>
+            <code>saturation</code> odnosno zasićenje. Izražava se u procentima i 100% je puna boja.<br>
+            <code>lightness</code> odnosno svetlina. Izražava se u procentima 0% je crna, a 100% je bela.</p>
+        <hr>
+        <p>
+            <code>hsla(hue, saturation, lightness, alpha);</code><br>
+            Slično kao u prethodnom primeru, samo što postoji još i <code>alpha</code> parametar.</p>
+        <hr>
+        <p>
+            <code>opacity</code> - odnosno neprovidnost, podešava neprovidnost za element<br> (kada se postavi,
+            pozadina i tekst će biti neprovidni) <br>
+            Opacity parametar je broj izmedju 0.0 (skroz prozirno) i
+            1.0 (neprozirno).</p>
+        <br>
+    </div>
+    <div id="opisGradients" style="padding: 5px;">
+        <!-- Sadrzaj gradients -->
+        <img src="../img/opisGradient.png" alt="Gradients" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>Kod CSS-a 3 postoje 2 tipa gradijenata:<br>
+            1. linearni gradijent <br>
+            2. radialni gradijent</p>
+        <hr>
+        <p>
+            Kod linearnog gradijenta, postoje varijacije u sintaksi:<br>
+            <code>linear-gradient: (pravac, boja1, boja2,...);</code>,
+            <code>linear-gradient: (ugao, boja1, boja2,...);</code>
+            <code>repeating-linear-gradient: (boja1, boja2, boja3,...);</code></p>
+        <p>
+            <code>linear-gradient: (to right, red, yellow);</code> -
+            prvi parametar može imati svojstva:<br> down, up, left, right, diagonally, a ostali parametri su boje.<br>
+            <code>linear-gradient: (45deg, red, yellow);</code> - prvi parametar može biti bilo koji ugao,<br> a ostali
+            parametri su boje.</p>
+        <p>
+            <code>repeating-linear-gradient: (red, yellow 10%,green 20%);</code> - koristi se da bi se određena šema
+            boja ponavljala</p>
+        <hr>
+        <p>
+            Kod radijalnog gradijenta, takođe postoje varijacije u sintaksi:<br>
+            <code>radial-gradient: (početnaBoja, boja1, boja2,...);</code>,<br>
+            <code>radial-gradient: (oblik, boja1, boja2,...);</code>,<br>
+            <code>radial-gradient: (veličinaGradijenta, boja2, boja3,...);</code><br>
+            <code>repeating-radial-gradient: (boja1, boja2, boja3,...);</code></p>
+        <p>
+            <code>radial-gradient: (red, yellow, green);</code> - svi paramateri mogu biti različite boje.<br>
+            <code>radial-gradient: (circle, red, yellow);</code> -
+            prvi parametar može imati vrednost circle<br> ili ellipse, a ostali parametri su boje.</p>
+        <p>
+            <code>radial-gradient: (closest-side at 60% 55%, red, yellow, black);</code> - prvi parametar definiše
+            veličinu gradijenta i može imati vrednosti: <br>
+            <code>closest-side</code> - gradijent se iscrtava prema najbližoj strani<br>
+            <code>farthest-side</code> - gradijent se iscrtava prema najdaljoj strani<br>
+            <code>closest-corner</code> - gradijent se iscrtava prema najbližem uglu<br>
+            <code>farthest-corner</code> - gradijent se iscrtava prema najdaljem uglu<br>
+            Ostali parametri su boje.</p>
+        <p>
+            <code>repeating-radial-gradient: (red, yellow 10%, green 20%,);</code> - koristi se da bi se određena šema
+            boja kružno ponavljala
+        </p>
+    </div>
+    <div id="opisShadows" style="padding: 5px;">
+        <!-- Sadrzaj Shadows -->
+        <img src="../img/opisShadows.png" alt="Shadows" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>CSS3 Senke imaju svojstva:<br>
+            <code>text-shadow</code> i
+            <code>box-shadow</code></p>
+        <p>
+            <code>text-shadow</code> dodaje senke tekstu<br> i ima nekoliko varijacija sintaksi:<br>
+            <code>text-shadow: 2px 2px red;</code> - prvi parametar je horizontalna senka, drugi parametar je
+            vertikalna senka, treci parametar je boja.</p>
+        <p>
+            <code>text-shadow: 2px 2px 5px red;</code> - prvi parametar je horizontalna senka, drugi parametar je
+            vertikalna senka, treći parametar je "zamagljenost" boje i četvrti parametar je boja.</p>
+        <p>
+            <code>text-shadow: 2px 2px 5px red, 3px 3px 6px green;</code> - slična sintaksa kao prethodni primer, samo
+            što se dodaje još jedan sloj senke.<br>
+            Moguće je imati i negativne vrednosti za px, pa se time dodaje ivica senke.</p>
+        <hr>
+        <p>
+            <code>box-shadow</code> dodaje senku elementima i ima nekoliko varijacija sintaksi:<br>
+            <code>box-shadow: 2px 2px red;</code> - prvi parametar je horizontalna senka, drugi parametar je vertikalna
+            senka, treći parametar je boja.</p>
+        <p>
+            <code>box-shadow: 2px 2px 5px red;</code> - prvi parametar je horizontalna senka, drugi parametar je
+            vertikalna senka, treći parametar je "zamagljenost" boje i četvrti parametar je boja.</p>
+        <p>
+            <code>box-shadow: 2px 2px 5px red, 3px 3px 6px green;</code> - slična sintaksa kao prethodni primer, samo
+            što se dodaje još jedan sloj senke.
+        </p>
+    </div>
+    <div id="opisText" style="padding: 5px;">
+        <!-- Sadrzaj Text-a -->
+        <img src="../img/opisText.png" alt="Text" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>CSS3 nudi nove mogućnosti za stilizovanje text-a i to:<br>
+            <code>text-overflow</code>,
+            <code>word-wrap</code>,
+            <code>word-break</code><br>
+            <code>text-overflow</code> - kontroliše kako će se sadržaj koji ne može da stane u element, ponašati.<br>
+            Može imati vrednosti <code>clip</code> i <code>ellipsis</code></p>
+        <p>
+            <code>text-overflow: clip</code> - visak teksta se odseca, u zavisnosti od širine elementa.<br>
+            <code>text-overflow: ellipsis</code> - višak teksta se odseca, u zavisnosti od širine elementa<br> i dodaju
+            se tri tačke.<br>
+        </p>
+        <hr>
+        <p>
+            <code>word-wrap: break-word</code> - omogućava dugačkim rečima na određenom mestu da se prenesu u novi red.</p>
+        <hr>
+        <p>
+            <code>word-break</code> - navodi pravila za prelamanje teksta.<br> Može imati dva parametra: <br>
+            <code>word-break: keep-all;</code> - tekst se ne prelama<br>
+            <code>word-break: break-all;</code> - tekst će se prelomiti kod svakog karaktera.
+        </p>
+    </div>...
+    <div id="opisFonts" style="padding: 5px;">
+        <!-- Sadrzaj Fonts -->
+        <img src="../img/opisFonts.png" alt="Fonts" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>CSS3 Web fontovi omogucavaju web dizajnerima<br> da koriste fontove koji nisu instalirani na računarima
+            korisnika.<br>
+            Za tu potrebu se koristi se svojstvo <code>@font-face</code>
+        </p>
+        <p>
+            <code>@font-face{
+                font-family: Oswald-Bold;
+                src: url(Oswald-Bold.ttf);
+                }
+            </code><br>
+            Postoje dodatni parametri za <code>@font-face</code> svojstvo. Neki od njih su: <br>
+            <code>font-stretch</code>, <code>font-style</code>, <code>font-weight</code>
+        </p>
+        <p>
+            Postoji nekoliko formata za font. Neki od njih su: <br>
+            TrueType Fonts (TTF) - danas najčešće korišćeni fontovi za Mac OS i Windows<br>
+            OpenType Fonts (OTF) - napravljen je prema TrueType Font-u i najčešće se koristi na kompijuterskih
+            platformama.<br>
+            The Web Open Font Format (WOFF) - napravljen je 2009. godine i danas je preporučen od strane W3C-a.<br>
+            SVG Fonts/Shapes - novi fontovi koji su dodati od strane HTML5.<br>
+            Embedded OpenType Fonts (EOT) - slični OpenType fontovima i koriste se kao ugrađeni fontovi na web
+            stranicama.
+        </p>
+    </div>
+    <div id="opisTransforms" style="padding: 5px;">
+        <!-- Sadrzaj Transforms -->
+        <img src="../img/opisTransforms.png" alt="Transforms" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>
+            CSS3 transformacije se dele na:<br>
+            1. 2D Transformacije<br>
+            2. 3D Transformacije
+        </p>
+        <p>
+            2D Transformacije mogu imati sledeća svojstva:<br>
+            <code>translate()</code>,
+            <code>rotate()</code>,
+            <code>scale()</code>,
+            <code>skewX()</code>,
+            <code>skewY()</code>,
+            <code>skew()</code>,
+            <code>matrix()</code><br>
+            <code>transform: translate(50px, 100px);</code> - svojstvo pomera element za 50px desno<br> i 100px dole od
+            trenutne pozicije<br>
+            <code>transform: rotate(50px);</code> - svojstvo pomera element za 50px u smeru kazaljke na satu. Ako je
+            vrednost negativna, element se pomera suprotno kazaljci na satu.<br>
+            <code>transform: scale(2,3);</code> - svojstvo povećava ili umanjuje veličinu elementa.<br> U ovom slučaju
+            elementu se širina povećava 2 puta a visina 3 puta više.<br>
+            <code>transform: skewX(50deg);</code> - svojstvo će da iskosi element za 50 stepeni po X osi.<br>
+            <code>transform: skewY(50deg);</code> - svojstvo će da iskosi element za 50 stepeni po Y osi.<br>
+            <code>transform: skew(25deg, 50deg);</code> - svojstvo će da iskosi element za 25 stepeni po X osi i 50
+            stepeni po Y osi.<br>
+            <code>transform: matrix(1, -0.3, 0, 1, 0, 0);</code> - svojstvo kombinuje sve 2D transformacije u jednu.<br>
+            Prva vrednost je scaleX,
+            Druga vrednost je skewY<br>
+            Treća vrednost je skewX,
+            Četvrta vrednost je scaleY<br>
+            Peta vrednost je translateX,
+            Šesta vrednost je translateY<br>
+        </p>
+        <hr>
+        3D Transformacije mogu imati sledeća svojstva:<br>
+        <code>rotateX()</code>,
+        <code>rotateY()</code>,
+        <code>rotateZ()</code><br>
+        <code>transform: rotateX(150deg);</code> - svojstvo pomera element za 150 stepeni oko X ose.<br>
+        <code>transform: rotateY(150deg);</code> - svojstvo pomera element za 150 stepeni oko Y ose.<br>
+        <code>transform: rotateZ(150deg);</code> - svojstvo pomera element za 150 stepeni oko Z ose.<br>
+    </div>
+    <div id="opisTransitions" style="padding: 5px;">
+        <!-- Sadrzaj Transitions -->
+        <img src="../img/opisTransitions.png" alt="Transitions" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>
+            CSS3 tranzicije omogućavaju da se određeno svojstvo promeni polako,<br> tokom određenog vremena.<br>
+            Da bi se kreirala tranzicija, potrebno je navesti 2 stvari:<br>
+            1. CSS svojstvo na koje će se tranzicija primeniti<br>
+            2. Dužina efekta<br>
+            <code>transition: width 2s;</code>, <code>div:hover{width: 400px;}</code><br> npr. kada se pređe mišom
+            preko div elementa, promeni širinu na 400px za 2 sekunde.<br>
+            Transition svojstvo može imati sledeće parametre: <br>
+            <code>transition-timing-function</code>,<code>transition-delay</code>, <code>transition-property</code><br>
+            <code>transition-timing-function</code> može imati sledeće parametre:<br>
+            <code>ease</code> - tranzicija počinje polako, pa brzo, pa polako (ovo je podrazumevana vrednost).<br>
+            <code>linear</code> - tranzicija će imati istu brzinu, od početka, do kraja.<br>
+            <code>ease-in</code> - tranzicija ima spor početak.<br>
+            <code>ease-out</code> - tranzicija ima spor završetak.<br>
+            <code>ease-in-out</code> - tranzicija ima spor početak i završetak.<br>
+            <code>cubic-bezier(n,n,n,n)</code> - omogućava da se definišu sopstvene vrednosti u cubic-bezier funkciji.<br>
+            <code>transition-delay: 2s;</code> svojstvo omogućava kašnjenje za tranziciju npr. za 2 sekunde.<br>
+            <code>transition-property</code> omogućava da se navede ime CSS svojstva na koje će tranzicija da se
+            odnosi.
+        </p>
+    </div>...
+    <div id="opisAnimations" style="padding: 5px;">
+        <!-- Sadrzaj Animations -->
+        <img src="../img/opisAnimations.png" alt="Animations" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>
+            CSS3 animacija omogućava da element promeni stil iz jednog u drugi.<br> Ključna reč je <code>@keyframes</code></p>
+        <p>
+            <code>
+                @keyframes primer {
+                10% {background-color: red;}<br>
+                50% {background-color: green;}<br>
+                100% {background-color: blue;}
+                }</code></p>
+        <hr>
+        <p>
+            <code>
+                div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: primer;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                animation-iteration-count: 3;
+                animation-direction: reverse;
+                animation-timing-function: ease;
+                }</code></p>
+        <p>
+            <code>animation-name</code> - ime animacije koja će se primeniti na element.</p>
+        <p>
+            <code>animation-duration</code> - trajanje animacije. </p>
+        <p>
+            <code>animation-delay</code> - kašnjenje animacije za određeni broj sekundi.</p>
+        <p>
+            <code>animation-iteration-count</code> - broj ponavljanja animacije.<br> Može biti infinite - animacija se
+            ponavlja beskonačno.</p>
+        <p>
+            <code>animation-direction</code> - može imati vrednost reverse i alternate.<br>
+            Reverse - animacija se odvija u suprotnom smeru <br>
+            Alternate - animacija se odvija normalno, pa u suprotnom smeru itd.
+        </p>
+        <p>
+            <code>animation-timing-function</code> može imati sledeće parametre:<br>
+            <code>ease</code> - animacija počinje polako, pa brzo, pa polako (ovo je podrazumevana vrednost).<br>
+            <code>linear</code> - animacija će imati istu brzinu, od početka, do kraja.<br>
+            <code>ease-in</code> - animacija ima spor početak.<br>
+            <code>ease-out</code> - animacija ima spor završetak.<br>
+            <code>ease-in-out</code> - animacija ima spor početak i završetak.<br>
+            <code>cubic-bezier(n,n,n,n)</code> - omogućava da se definišu sopstvene vrednosti u cubic-bezier funkciji.
+        </p>
+    </div>
+    <div id="opisColumns" style="padding: 5px;">
+        <!-- Sadrzaj Columns -->
+        <img src="../img/opisColumn.png" alt="Columns" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>
+            CSS3 Multiple Columns omogućava da se tekst prelomi u više kolona.<br>
+            Multiple Columns imaju sledeća svojstva: <br>
+            <code>column-count: 3</code> - svojstvo precizira broj kolona na koliko će element biti podeljen.<br>
+            <code>column-gap: 40px</code> - precizira razmak između kolona na 40px. <br>
+            <code>column-rule-style: solid</code> - precizira stil kolona npr. solid, dashed, dotted itd. <br>
+            <code>column-rule-width: 1px</code> - precizira širinu kolone. <br>
+            <code>column-rule-color: red;</code> - precizira boju kolone.<br>
+            <code>column-rule: 1px solid red</code> - je skraćeno svojstvo koje ukljucuje širinu, stil i boju kolone.<br>
+            <code>column-span: all</code> - precizira koji element treba da ima raspon cele kolone.<br>
+            <code>column-width: 100px;</code> - precizira širinu kolone.
+        </p>
+    </div>
+    <div id="opisInterface" style="padding: 5px;">
+        <!-- Sadrzaj Interface -->
+        <img src="../img/opisInterface.png" alt="UserInterface" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>
+            <code>resize</code> svojstvo precizira da li element može da promeni veličinu. Može imati sledeće
+            parametre:<br>
+            <code>resize: horizontal</code> korisnik može da raširi element horizontalno.<br>
+            <code>resize: vertical</code> korisnik može da raširi element vertikalno.<br>
+            <code>resize: both</code> korisnik može da raširi element i horizontalno i vertikalno.<br>
+        </p>
+        <p>
+            <code>outline-offset: 15px;</code> svojstvo dodaje razmak između outline-a i ivice elementa. <br>
+        </p>
+    </div>
+    <div id="opisBoxSizing" style="padding: 5px;">
+        <!-- Sadrzaj box-sizing -->
+        <img src="../img/opisBoxSizing.png" alt="box-sizing" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>
+            <code>box-sizing</code> omogućava elementu da u ukupnu širinu i visinu uračuna padding i ivicu.<br>
+            <code>box-sizing: border-box;</code>
+        </p>
+    </div>
+    <div id="opisFlexbox" style="padding: 5px;">
+        <!-- Sadrzaj flexbox -->
+        <img src="../img/opisFlex.png" alt="flexbox" class="img-responsive" style="margin: auto;width: 70%;border-radius: 10px;">
+        <p>
+            Flexbox je novi layout model u CSS3. Korišćenje flexbox-a omogućava da se elementi ponašaju predviljivo na
+            različitim uređajima.<br>
+            Flexbox se sastoji od flex container-a i flex item-a.<br>
+            Flex container je deklarisan <code>display</code> svojstvom kao <code>flex</code> ili <code>inline-flex</code>
+            element.<br>
+            Flex element može imati sledeća svojstva:<br>
+            <code>direction: rtl</code> - pomera se pravac flexboxa sa desna na levo. <br>
+            <code>flex-direction</code> - svojstvo omogućava promenu pravca flex item-a.<br> Podrazumevana vrednost je
+            row.<br>
+            <code>justify-content</code> - svojstvo omogućava da se elementi horizontalno poravnaju<br> ako nema
+            prostora na glavnoj osi.<br>
+            <code>align-items</code> - svojstvo omogućava da se elementi vertikalno poravnaju<br> ako nema prostora na
+            sporednoj osi.<br>
+            <code>flex-wrap</code> - svojstvo omogućava da li da flex item-i treba da se "prelome" ili ne, ako nema
+            mesta na flex liniji.<br>
+            <code>align-content</code> - svojstvo menja ponašanje <code>flex-wrap</code> parametra.<br> Slicno je <code>align-items</code>,
+            ali umesto poravnanja flex item-a, flex lines se poravnjavaju.<br>
+            <code>flex</code> - svojstvo precizira dužinu flex item-a.
+        </p>
+    </div>
+</body>
+
+</html>

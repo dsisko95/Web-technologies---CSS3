@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(../font/Ubuntu-Bold.ttf);
+    /* Ubuntu-Bold fontovi da radili i offline */
+}
+
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(../font/Oswald-Bold.ttf);
+    /* Oswald fontovi da radili i offline */
+}
+
+body {
+    font: 20px Ubuntu-Bold;
+    line-height: 1.8;
+    padding-top: 80px;
+}
+
+/* Padding se dodaje da bi sadrzaj bio ispod navigacionog menija */
+p {
+    font-size: 16px;
+}
+
+footer a img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Velicina slova za fontove */
+.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    /* Dizajn za container */
+}
+
+.navbar-default {
+    background-color: #1CA591;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    border-bottom: 1px solid black;
+    /* Dizajn navigacionog menija */
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    /* Dizajn linkova desno */
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    background-color: #555;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 30px;
+    /* Dizajn linkova desno, kada se predje misom preko njih */
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: 36px;
+    font-family: Oswald-Bold;
+
+    /* Dizajn logoa websajta */
+}
+
+.navbar-default .navbar-brand:hover {
+    color: black;
+    /* Dizajn logoa websajta, kada se misem predje preko */
+}
+
+#kuca {
+    color: white;
+    font-size: 18px;
+}
+
+/* Dizajn kucice u navigacionom meniju*/
+#kuca:hover {
+    color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* Dizajn kucice u navigacionom meniju, kada se misom predje preko */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+/* Crn hamburger meni */
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+/* Logo crne boje */
+footer {
+    background-color: dimgray;
+    border-top: 2px solid gray;
+}
+
+/*  Stilizovanje futera */
+.container-fluid:last-child a img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/*  Stilizovanje social link button-a u futeru */
+.container-fluid:last-child a img:hover {
+    opacity: 1;
+}
+
+/*  Stilizovanje futer social button-a kada se predje misom preko */
+.jumbotron {
+    margin-bottom: 0px;
+    background-color: #9d9f9e;
+    color: #323232;
+    border-bottom: 1px solid gainsboro;
+}
+
+/*  Stilizovanje jubmotrona */
+.jumbotron img:first-child {
+    margin: auto;
+    width: 120px;
+}
+
+/*  Stilizovanje prve slike u jumbotronu */
+.jumbotron img:last-child {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+}
+
+/*  Stilizovanje gif-a u jumbotronu */
+.jumbotron+.jumbotron {
+    background-color: gainsboro;
+    box-shadow: 5px 0px 5px gray;
+}
+
+/*  Stilizovanje drugog jumbotron-a */
+.jumbotron span {
+    font-size: 70px;
+    cursor: pointer;
+    color: #1CA591;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+}
+
+/*  Stilizovanje strelice u prvom jumbotron-u */
+@-webkit-keyframes puls {
+    0% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
+}
+
+@keyframes puls {
+    0% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
+}
+
+/* Izrada animacije za strelicu nadole */
+.jumbotron span {
+    -webkit-animation: puls 1s ease-out;
+    animation: puls 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+/* Dizajn strelice nadole u jumbotronu, kada se misom predje preko*/
+.jumbotron+.jumbotron img {
+    width: 50%;
+    min-width: 265px;
+    margin: auto;
+    height: 500px;
+}
+
+/*  Stilizovanje slike u drugom jumbotron-u */
+.jumbotron+.jumbotron button {
+    padding: 5px 15px 5px 15px;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+/*  Stilizovanje dugmeta u drugom jumbotron-u */
+p#sakriven {
+    visibility: hidden;
+}
+
+/*  Sakriveni paragraf za RWD */
+.ivica {
+    border-left: 10px solid gray;
+    background-color: lightgray;
+    border-radius: 3px 5px 5px 3px;
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 10px;
+}
+
+/*  Stilizovanje div-a za primere MQ */
+.jumbotron #mreza {
+    width: 700px;
+    height: 300px;
+    box-shadow: 4px 4px 4px gray;
+    border: 1px ridge gray;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+/*  Stilizovanje slike mreza u poslednjem jumbotron-u */
+.jumbotron p {
+    font-size: 19px;
+}
+
+/*  Smanjenje velicine slova na stranici */
+.active {
+    background-color: #555;
+    border-radius: 30px;
+}
+
+/* Active klasa */
+@media only screen and (max-width:992px) {
+    .jumbotron span {
+        display: none;
+    }
+
+    p#sakriven {
+        visibility: visible;
+    }
+}
+
+/*  Ako je velicina ekrana manja od 992px, sakrij strelicu nadole, a prikazi sakriveni dijagram */
+@media only screen and (orientation: portrait) {
+    .navbar-default {
+        background-color: #20B0D4;
+    }
+}
+
+/* Promeni boju navigacionog menija kada je orijentacija portrait */
